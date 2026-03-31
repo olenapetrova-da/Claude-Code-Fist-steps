@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olena Petrova</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0f0f0f;
+      color: #a1e1e1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #fff;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #fff 0%, #888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #888;
+      max-width: 500px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2.2rem;
+      background: #fff;
+      color: #0f0f0f;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 2rem 6rem;
+    }
+
+    .card {
+      background: #181818;
+      border: 1px solid #252525;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 280px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: #444; }
+
+    .card .icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #1a1a1a;
+      font-size: 0.85rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TW</div>
+    <nav>
+      <a href="#">O mnie</a>
+      <a href="#">Projekty</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Tomek Woliński</h1>
+    <p>Tworzę rzeczy, które działają sprawnie i wyglądają dobrze. Cześć!</p>
+    <a href="#" class="btn">Skontaktuj się</a>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <div class="icon">&#x1F4BB;</div>
+      <h3>Projekty</h3>
+      <p>Różne ciekawe rzeczy, które powstały z pomysłu i linii kodu.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#x1F9E0;</div>
+      <h3>Umiejętności</h3>
+      <p>Web, automatyzacja, analiza danych — szeroki zakres zainteresowań.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#x1F4AC;</div>
+      <h3>Kontakt</h3>
+      <p>Chętnie porozmawiam o współpracy lub ciekawym projekcie.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Tomek Woliński
+  </footer>
+
+</body>
+</html>
